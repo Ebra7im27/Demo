@@ -1,0 +1,35 @@
+.page-not-found {
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-code {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #21B592;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 2rem;
+    font-weight: 500;
+    /* color: #343a40; */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.error-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.go-back-btn {
+    border: none;
+    background-color: #21B592;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+}

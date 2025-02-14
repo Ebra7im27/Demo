@@ -1,0 +1,45 @@
+.card {
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* .btn-primary {
+    background-color: #21B592;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+} */
+/* 
+.btn-primary:hover {
+    background-color: #0056b3;
+} */
+
+.imgStu{
+    background-image: url(../../../public/assets/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fa-facebook {
+    color: #1877F2; /* لون فيسبوك */
+}
+
+.fa-twitter {
+    color: #1DA1F2; /* لون تويتر */
+}
+
+.fa-instagram {
+    color: #E4405F; /* لون إنستجرام */
+}
