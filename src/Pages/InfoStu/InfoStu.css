@@ -18,13 +18,16 @@
     background-color: #0056b3;
 } */
 
-.imgStu{
+.imgStu {
     background-image: url(../../../public/assets/profile.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 150px;
+    margin-top: 100px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
     border-radius: 50%;
     position: absolute;
     bottom: 22%;
@@ -32,14 +35,52 @@
     transform: translateX(-50%);
 }
 
+.emailStu,
+.bandStu,
+.divitionStu {
+    font-size: 20px;
+}
+
+.userEmail,
+.userBand,
+.userDivision {
+    font-size: 14px;
+}
+
 .fa-facebook {
-    color: #1877F2; /* لون فيسبوك */
+    color: #1877F2;
+    /* لون فيسبوك */
 }
 
 .fa-twitter {
-    color: #1DA1F2; /* لون تويتر */
+    color: #1DA1F2;
+    /* لون تويتر */
 }
 
 .fa-instagram {
-    color: #E4405F; /* لون إنستجرام */
+    color: #E4405F;
+    /* لون إنستجرام */
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media(max-width:1180px) {
+    .imgStu {
+        width: 70px;
+        height: 70px;
+        bottom: 30%;
+    }
+
+    .emailStu,
+    .bandStu,
+    .divitionStu {
+        font-size: 15px;
+    }
+
+    .userEmail,
+    .userBand,
+    .userDivision {
+        font-size: 12px;
+    }
 }

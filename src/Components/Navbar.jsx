@@ -4,8 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 function Header() {
-    const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
-    const navigate = useNavigate();
+    const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false)
+    const navigate = useNavigate()
 
     const navItems = [
         { name: "الصفحة الرئيسية", link: "/", icon: "fas fa-home" },
@@ -14,9 +14,9 @@ function Header() {
         { name: "الأخبار", link: "/student/news", icon: "far fa-newspaper" },
         { name: "المواد الدراسية", link: "/student/subjects", icon: "fas fa-book" },
         { name: "تسجيل الخروج", link: "/", icon: "fas fa-power-off" }
-    ];
+    ]
 
-    const today = new Date();
+    const today = new Date()
     const formattedDate = today.toLocaleDateString('ar-EG', {
         weekday: 'long',
         year: 'numeric',
@@ -24,10 +24,10 @@ function Header() {
         day: 'numeric',
     })
 
-    const [userName, setUserName] = useState('');
+    const [userName, setUserName] = useState('')
 
     useEffect(() => {
-        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"));
+        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"))
         if (UserInfo && UserInfo.Name) {
             setUserName(UserInfo.Name)
         }
@@ -66,27 +66,31 @@ function Header() {
     return (
         <>
             <nav className="navbar navbar-expand-lg sticky-top bg-light">
-                <div className="container">
+                <div className="container-fluid">
                     <button
-                        className="btn btn-dark ms-3"
+                        className="btn btn-dark ms-3 btnTogg"
                         type="button"
                         onClick={() => setIsOffcanvasOpen(true)}
-                        style={{ color: "#1a237e", borderColor: "#f0f0f0" }}
+                        style={{ color: "#1a237e", borderColor: "#f0f0f0"}}
                     >
                         <i className="fas fa-bars" style={{ color: "#fff" }}></i>
                     </button>
 
-                    <div className="ms-auto" style={{ fontSize: "19px", marginRight: "20px" }}>
+                    <div className="ms-auto textDate">
                         <i className="fas fa-calendar-alt ms-1"></i>
                         {formattedDate}
                     </div>
 
-                    <div className="d-flex gap-3">
-                        <Link to={"/student/info"} className="text-dark"><i className="fas fa-user mt-1" style={{ fontSize: "24px", cursor: "pointer", marginLeft: "15px" }}></i></Link>
+                    <div className="upIcon">
+                    <Link to={"/student/info"} className="text-dark userInfo"><i className="fas fa-user mt-1"></i></Link>
 
-                        <div className="dropdown">
-                            <button className="btn btn-secondary dropdown-toggle position-relative bellIcon bg-light text-dark border-0 d-lg-none d-xl-block" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i className="fas fa-bell" style={{ fontSize: "24px", cursor: "pointer" }}></i>
+                        <button onClick={handleLogout} style={{ background: "none", border: "none", cursor: "pointer" }}>
+                            <i className="fas fa-sign-out-alt signOut"></i>
+                        </button>
+
+                        <div className="dropstart">
+                            <i className="fas fa-bell bellnoti"></i>
+                            <button className="btn btn-secondary dropdown-toggle position-relative bellIcon bg-light text-dark border-0" data-bs-toggle="dropdown" aria-expanded="false">
                             </button>
                             <ul className="dropdown-menu">
                                 <li><span className="dropdown-item text-end fw-bold fs-5">الإشعارات الجديدة .......</span></li>
@@ -116,10 +120,6 @@ function Header() {
                             </ul>
                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-1">99+</span>
                         </div>
-
-                        <button onClick={handleLogout} style={{ background: "none", border: "none", cursor: "pointer" }}>
-                            <i className="fas fa-sign-out-alt mt-1" style={{ fontSize: "24px" }}></i>
-                        </button>
                     </div>
                 </div>
             </nav>
@@ -133,7 +133,7 @@ function Header() {
             >
                 <div className="offcanvas-header text-center">
                     <button type="button" className="btn-close" onClick={closeOffcanvas} data-bs-dismiss="offcanvas"></button>
-                    <h5 className="offcanvas-title fs-4 fw-bold" style={{ marginLeft: "50px" }}>{userName}</h5>
+                    <h5 className="offcanvas-title text-secondary fs-5 fw-old userName">{userName}</h5>
                 </div>
                 <div className="offcanvas-body">
                     <ul className="nav flex-column text-end">
@@ -145,15 +145,15 @@ function Header() {
                                     style={{ color: "#1a237e" }}
                                     onClick={(e) => {
                                         if (item.name === "تسجيل الخروج") {
-                                            e.preventDefault();
-                                            handleLogout();
+                                            e.preventDefault()
+                                            handleLogout()
                                         }
-                                        closeOffcanvas();
+                                        closeOffcanvas()
                                     }}
                                 >
-                                    <i className={`${item.icon} text-dark fs-6`}></i>
+                                    <i className={`${item.icon} text-dark fs-5`}></i>
                                     &nbsp;
-                                    <span className="text-dark fs-5">{item.name}</span>
+                                    <span className="text-dark fs-6">{item.name}</span>
                                 </Link>
                             </li>
                         ))}

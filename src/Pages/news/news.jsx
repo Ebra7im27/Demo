@@ -121,9 +121,6 @@ function News() {
                 </div>
             </div>
 
-            
-
-
             <Footer />
         </div>
     )

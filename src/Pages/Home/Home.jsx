@@ -5,13 +5,13 @@ import Footer from "../../Components/Footer";
 import { useEffect, useState } from "react";
 
 function Home() {
-    const [userName, setUserName] = useState('');
+    const [userName, setUserName] = useState('')
 
     useEffect(() => {
-        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"));
+        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"))
 
         if (UserInfo && UserInfo.Name) {
-            setUserName(UserInfo.Name);
+            setUserName(UserInfo.Name)
         }
     }, [])
 

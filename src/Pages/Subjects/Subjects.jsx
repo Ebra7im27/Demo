@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer";
 
 function Subjects() {
     const [selectedSemester, setSelectedSemester] = useState("one")
-    
+
     // const [selectedSemester, setSelectedSemester] = useState("two") // لو عاوز الفصل الدراسي الثاني هو الوضع الإفتراضي
 
     function SemesterOne() {
@@ -28,7 +28,7 @@ function Subjects() {
                                     <td>برمجه الشبكات</td>
                                     <td>الفصل الدراسي الأول</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -39,7 +39,7 @@ function Subjects() {
                                     <td>هندسة البرمجيات (2) </td>
                                     <td>الفصل الدراسي الأول</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -50,7 +50,7 @@ function Subjects() {
                                     <td>الرؤية بالحاسب</td>
                                     <td>الفصل الدراسي الأول</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -61,7 +61,7 @@ function Subjects() {
                                     <td>الذكاء الإصطناعي</td>
                                     <td>الفصل الدراسي الأول</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -95,7 +95,7 @@ function Subjects() {
                                     <td>النظم الخبيرة</td>
                                     <td>الفصل الدراسي الثاني</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -106,7 +106,7 @@ function Subjects() {
                                     <td>الوسائط المتعددة</td>
                                     <td>الفصل الدراسي الثاني</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -117,7 +117,7 @@ function Subjects() {
                                     <td>تحليل وتصميم الخوارزميات</td>
                                     <td>الفصل الدراسي الثاني</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>
@@ -128,7 +128,7 @@ function Subjects() {
                                     <td>بناء المترجمات</td>
                                     <td>الفصل الدراسي الثاني</td>
                                     <td>
-                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "140px", cursor: "pointer" }}>
+                                        <div className="border border-0 bg-warning p-1 rounded" style={{ width: "150px", cursor: "pointer" }}>
                                             <i className="fas fa-eye text-light"></i>
                                             <span className="text-light" style={{ marginRight: "5px" }}>عرض المحاضرات</span>
                                         </div>

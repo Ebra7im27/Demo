@@ -24,15 +24,15 @@ function InfoStu() {
     const [userTel, setUserTel] = useState('');
 
     useEffect(() => {
-        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"));
+        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"))
 
         if (UserInfo) {
-            setUserName(UserInfo.Name || '');
-            setUserEmail(UserInfo.Email || '');
-            setUserAddress(UserInfo.Address || '');
-            setUserTel(UserInfo.Tel || '');
-            setUserBand(UserInfo.Band || '');
-            setUserDivision(UserInfo.Division || '');
+            setUserName(UserInfo.Name || '')
+            setUserEmail(UserInfo.Email || '')
+            setUserAddress(UserInfo.Address || '')
+            setUserTel(UserInfo.Tel || '')
+            setUserBand(UserInfo.Band || '')
+            setUserDivision(UserInfo.Division || '')
 
             setFormData(prevState => ({
                 ...prevState,
@@ -185,23 +185,23 @@ function InfoStu() {
                                 <img src="/assets/bg.jpg" className="card-img" alt="..." />
                                 <div className="card-img-overlay">
                                     <h5 className="card-title">{userName}</h5>
-                                    <div className="imgStu text-center" style={{ width: "100px", height: "100px", borderRadius: "50%", marginRight: "150px", marginTop: "100px" }}>
+                                    <div className="imgStu text-center">
                                     </div>
                                 </div>
                                 <div className="d-flex justify-content-evenly">
                                     <div className="mt-4 text-center">
-                                        <h2 className=" fs-4 fw-bold">البريد الإلكتروني</h2>
-                                        <p className="text-body-secondary">{userEmail}</p>
+                                        <h2 className="fw-bold emailStu">البريد الإلكتروني</h2>
+                                        <p className="text-body-secondary userEmail">{userEmail}</p>
                                     </div>
 
                                     <div className="mt-4 text-center">
-                                        <h2 className=" fs-4 fw-bold">الفرقة</h2>
-                                        <p className="text-body-secondary">{userBand}</p>
+                                        <h2 className="fw-bold bandStu">الفرقة</h2>
+                                        <p className="text-body-secondary userBand">{userBand}</p>
                                     </div>
 
                                     <div className="mt-4 text-center">
-                                        <h2 className=" fs-4 fw-bold">الشعبة</h2>
-                                        <p className="text-body-secondary">{userDivision}</p>
+                                        <h2 className="fw-bold divitionStu">الشعبة</h2>
+                                        <p className="text-body-secondary userDivision">{userDivision}</p>
                                     </div>
                                 </div>
                             </div>

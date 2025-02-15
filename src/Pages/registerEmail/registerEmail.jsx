@@ -21,7 +21,7 @@ function RegisterEmail() {
 
     // تحميل البيانات من localStorage عند تحميل المكون
     useEffect(() => {
-        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"));
+        const UserInfo = JSON.parse(localStorage.getItem("UserInfo"))
 
         if (UserInfo) {
             setFormData(prevState => ({
