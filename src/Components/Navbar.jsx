@@ -71,7 +71,7 @@ function Header() {
                         className="btn btn-dark ms-3 btnTogg"
                         type="button"
                         onClick={() => setIsOffcanvasOpen(true)}
-                        style={{ color: "#1a237e", borderColor: "#f0f0f0"}}
+                        style={{ color: "#1a237e", borderColor: "#f0f0f0" }}
                     >
                         <i className="fas fa-bars" style={{ color: "#fff" }}></i>
                     </button>
@@ -82,9 +82,9 @@ function Header() {
                     </div>
 
                     <div className="upIcon">
-                    <Link to={"/student/info"} className="text-dark userInfo"><i className="fas fa-user mt-1"></i></Link>
+                        <Link to={"/student/info"} className="text-dark userInfo"><i className="fas fa-user mt-1"></i></Link>
 
-                        <button onClick={handleLogout} style={{ background: "none", border: "none", cursor: "pointer" }}>
+                        <button onClick={handleLogout} style={{ background: "none", border: "none", cursor: "pointer", color: "red" }}>
                             <i className="fas fa-sign-out-alt signOut"></i>
                         </button>
 
